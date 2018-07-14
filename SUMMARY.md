@@ -1,15 +1,14 @@
 # Table of contents
 
 * [FRAMEWOKR-CORE工程简介](README.md)
-* [API层开发指南](api/README.md)
-    - [API接口层开发](api/api-intf-dev.md)
-    - [API实现层开发](api/api-impl-dev.md)
-* [数据层开发指南](data/README.md)
-    - [基于DAO模式的开发](data/data-dao-dev.md)
-    - [基于主数据模式的开发](data/data-meta-dev.md)
-    - [基于DDD模式的开发](data/data-ddd-dev.md)
-* [业务层开发指南](biz/README.md)
-    - [BO定义规范](data/biz-bo-dev.md)
-    - [Service定义规范](data/biz-service-dev.md)
-
+* [API层开发指南](api-ceng-kai-fa-zhi-nan/README.md)
+  * [API接口层开发](api-ceng-kai-fa-zhi-nan/api-jie-kou-ceng-kai-fa.md)
+  * [API实现层开发](api-ceng-kai-fa-zhi-nan/api-shi-xian-ceng-kai-fa.md)
+* [数据层开发指南](shu-ju-ceng-kai-fa-zhi-nan/README.md)
+  * [基于DAO模式的开发](shu-ju-ceng-kai-fa-zhi-nan/ji-yu-dao-mo-shi-de-kai-fa.md)
+  * [基于主数据模式的开发](shu-ju-ceng-kai-fa-zhi-nan/ji-yu-zhu-shu-ju-mo-shi-de-kai-fa.md)
+  * [基于DDD模式的开发](shu-ju-ceng-kai-fa-zhi-nan/ji-yu-ddd-mo-shi-de-kai-fa.md)
+* [业务层开发指南](ye-wu-ceng-kai-fa-zhi-nan/README.md)
+  * [BO定义规范](ye-wu-ceng-kai-fa-zhi-nan/bo-ding-yi-gui-fan.md)
+  * [Service定义规范](ye-wu-ceng-kai-fa-zhi-nan/service-ding-yi-gui-fan.md)
 
