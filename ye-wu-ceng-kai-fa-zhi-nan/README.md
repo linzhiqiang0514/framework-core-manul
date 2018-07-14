@@ -1,10 +1,10 @@
 # 业务层开发指南
 
-## Getting Super Powers
+## 简介
 
-Becoming a super hero is a fairly straight forward process:
+本章节主要介绍业务层的开发指南。 业务层包含：
 
-```text
-You got to trust me on this, I saved the world'
-```
+* BO对象：业务操作的BO。
+* Service：业务逻辑代码，包括调用数据服务。
+
 
