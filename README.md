@@ -19,7 +19,7 @@
       - framework-core-data-common-api-impl，主要包含数据层API的实现，如BaseFacadeImpl。
     - framework-core-biz-common-api，业务层API模块目录
       - framework-core-biz-common-api-intf，主要包含业务层API操作的基类，接口等，如BaseDTO，BaseFacade。
-      - framework-core-biz-common-app，主要包含业务服务层API的实现，如BaseFacadeImpl。
+      - framework-core-biz-common-api-impl，主要包含业务服务层API的实现，如BaseFacadeImpl。
 
 
 
