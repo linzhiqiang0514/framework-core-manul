@@ -1,10 +1,6 @@
-# 业务层开发指南
+# 模块新增规范
 
-## Getting Super Powers
+## 简介
 
-Becoming a super hero is a fairly straight forward process:
-
-```text
-You got to trust me on this, I saved the world'
-```
+本章节主要Maven模块新增需要注意的事项。
 
