@@ -9,6 +9,7 @@
   * [基于DAO模式的开发](shu-ju-ceng-kai-fa-zhi-nan/ji-yu-dao-mo-shi-de-kai-fa.md)
   * [基于主数据模式的开发](shu-ju-ceng-kai-fa-zhi-nan/ji-yu-zhu-shu-ju-mo-shi-de-kai-fa.md)
   * [基于DDD模式的开发](shu-ju-ceng-kai-fa-zhi-nan/ji-yu-ddd-mo-shi-de-kai-fa.md)
+  * [通用拦截处理机制](shu-ju-ceng-kai-fa-zhi-nan/tong-yong-lan-jie-chu-li-ji-zhi.md)
 * [业务层开发指南](ye-wu-ceng-kai-fa-zhi-nan/README.md)
   * [BO定义规范](ye-wu-ceng-kai-fa-zhi-nan/bo-ding-yi-gui-fan.md)
   * [Service定义规范](ye-wu-ceng-kai-fa-zhi-nan/service-ding-yi-gui-fan.md)

@@ -2,7 +2,7 @@
 
 ## Facade接口实现开发规范
 
-```
+```text
 /**
  * .
  *
@@ -29,8 +29,8 @@ public class PrivilegeFacadeImpl implements PrivilegeFacade {
     @Value("${xxxxxxx}")
     String privelegeUrl;
 
-   
-    
+
+
     @Override
     public List<PrivilegeDTO> queryAllPrivilege() {
         ResponseEntity<PaasBaseResponse<PrivilegeDTO>> responseDto = restTemplate.exchange(
@@ -47,5 +47,4 @@ public class PrivilegeFacadeImpl implements PrivilegeFacade {
 
 * 说明：
   * 1. 必须实现相应的接口
-  
 
