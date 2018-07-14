@@ -1,23 +1,12 @@
-# framework-core-manul
+# FRAMEWOKR-CORE工程简介
 
-## Getting Super Powers
+## 工程结构说明
 
-Becoming a super hero is a fairly straight forward process:
-
-```
-$ give me super-powers
-```
-
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
-
-Once you're strong enough, save the world:
-
-```
-// Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
+* framework-core，工程父pom，继承于SHTEL-PAAS-PARENT，用于声明工程范围内的maven定义
+  * framework-core-base，主要包含一些基本的工具类，如StringUtils、NumberUtils等。
+  * framework-core-pub，主要包含一些数据层和业务层共享的类，如ApplicationContextUtils，PageInfo，Entity的Base接口等。
+    - framework-core-data-common，数据层模块目录
+      - framework-core-data-common-service，
 
 
 
