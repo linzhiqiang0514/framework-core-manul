@@ -1,21 +1,11 @@
-# 数据层开发指南
+# 数据层层开发指南
 
-## Getting Super Powers
+## 简介
 
-Becoming a super hero is a fairly straight forward process:
+本章节主要介绍数据层的开发指南。 数据层包含：
+* Entity对象：广义上的包含数据层的PO,BO。
+* Mapper对象：ORM框架用于数据库操作的对象
+* DAO，Repository：数据库交互行为的封装
+* Service，Manager：数据业务层
 
-```text
-$ give me super-powers
-```
-
-{% hint style="info" %}
-Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
-
-Once you're strong enough, save the world:
-
-```text
-// Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
 
