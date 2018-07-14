@@ -13,6 +13,7 @@
  * @创建日期： 2018/7/14
  * @功能说明：
  */
+@Service("privilegeFacadeImpl")
 public class PrivilegeFacadeImpl implements PrivilegeFacade {
 
     /**
