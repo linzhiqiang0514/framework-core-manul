@@ -13,4 +13,10 @@
 * [业务层开发指南](ye-wu-ceng-kai-fa-zhi-nan/README.md)
   * [BO定义规范](ye-wu-ceng-kai-fa-zhi-nan/bo-ding-yi-gui-fan.md)
   * [Service定义规范](ye-wu-ceng-kai-fa-zhi-nan/service-ding-yi-gui-fan.md)
+* [服务开发指南](fu-wu-kai-fa-zhi-nan/README.md)
+  * [模块定义规范](fu-wu-kai-fa-zhi-nan/mo-kuai-ding-yi-gui-fan.md)
+  * [服务定义规范](fu-wu-kai-fa-zhi-nan/fu-wu-ding-yi-gui-fan.md)
+* [应用新增Maven模块须知](ying-yong-xin-zeng-maven-mo-kuai-xu-zhi/README.md)
+  * [模块新增规范](fu-wu-kai-fa-zhi-nan/mo-kuai-xin-zeng-gui-fan.md)
+
 
