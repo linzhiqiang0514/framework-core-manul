@@ -65,5 +65,13 @@ public class CustAttr extends AbstractBaseMetaAttrEntityImpl<Long> {
 与Dao模式相同
 ## Service规范
 与Dao模式相同
+## 操作动态属性
+假设客户有个纵表属性，属性名称vipLevel。
+配置了相应的主数据之后。
+```
+Cust cust = new Cust();
+cust.writeAttr("vipLevel",1);
+```
+
 
 
