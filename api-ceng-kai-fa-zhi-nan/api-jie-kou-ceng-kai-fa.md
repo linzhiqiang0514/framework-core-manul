@@ -4,10 +4,9 @@
 
 ![](../.gitbook/assets/api-package.png)
 
-
 ## DTO开发规范
 
-```
+```text
 /**
  * .
  *
@@ -23,11 +22,12 @@ public class PrivilegeDTO extends BaseDTO {
     //Getter Setter方法
 }
 ```
-+ 说明：
-    + 1. 必须以DTO结尾
-    + 2. 必须继承BaseDTO或者业务根据BaseDTO继承出来的基类，如：
-    
-```
+
+* 说明：
+  * 1. 必须以DTO结尾
+  * 1. 必须继承BaseDTO或者业务根据BaseDTO继承出来的基类，如：
+
+```text
 /**
  * .
  *
@@ -43,7 +43,8 @@ public class OrderBaseDTO extends BaseDTO {
     //Getter Setter方法
 }
 ```
-```
+
+```text
 /**
  * .
  *
@@ -60,9 +61,9 @@ public class CustomerOrderDTO extends OrderBaseDTO {
 }
 ```
 
-##Facade接口规范
+## Facade接口规范
 
-```
+```text
 /**
  * .
  *
@@ -78,13 +79,9 @@ public interface PrivilegeFacade extends IBaseFacade {
     List<PrivilegeDTO> queryAllPrivilege();
 }
 ```
-+ 说明：
-    + 1. 必须是接口
-    + 2. 必须以Facade结尾
-    + 3. 必须继承IBaseFacade或者业务根据IBaseFacade继承出来的基接口.
 
-    
-    
-    
-
+* 说明：
+  * 1. 必须是接口
+  * 1. 必须以Facade结尾
+  * 1. 必须继承IBaseFacade或者业务根据IBaseFacade继承出来的基接口.
 
