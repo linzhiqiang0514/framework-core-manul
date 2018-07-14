@@ -3,14 +3,21 @@
 ## 注解规范
 
 ### 基本的注解
+数据库映射对象（PO），需要对字段、类进行相应的注解标识。 主要是：
+* @Table 
+* @Id 
+* @Column 
+* @Version
 
-数据库映射对象（PO），需要对字段、类进行相应的注解标识。 主要是： @Table @Id @Column @Version
-
-分片表，库内分表要特别标记 @PartitionTable @SharedTable @PartitionKey @SharedKey
+分片表，库内分表要特别标记 
+* @PartitionTable 
+* @SharedTable 
+* @PartitionKey 
+* @SharedKey
 
 ### 范例
 
-```text
+```
 /**
  * .
  *
@@ -164,17 +171,31 @@ public class Privilege extends BaseEntityImpl<Long>
 
 #### 一、普通表
 
-1、增加@Table,@Id,@Column注解 2、表名、字段名，统一采用大写。
+* 1、增加@Table,@Id,@Column注解 
+* 2、表名、字段名，统一采用大写。
 
 #### 二、版本控制（乐观锁）
 
-当存在版本控制的乐观锁字段时，需要进行以下处理 1、增加@Version注解 2、实现接口 IVersionEntity，根据字段类型实现接口操作。
+当存在版本控制的乐观锁字段时，需要进行以下处理
+
++ 1、增加@Version注解 
++ 2、实现接口 IVersionEntity，根据字段类型实现接口操作。
 
 #### 三、分片表
 
-当表属于分片表时，，需要进行以下处理 1、需要增加相应注解，标记分片表，分片字段 @SharedTable @SharedKey 2、实现接口 ISingleShardingEntity（一维分片），ITwoDimensionsShardingEntity（二维分片），根据字段类型实现接口操作。
+当表属于分片表时，，需要进行以下处理 
+
+* 1、需要增加相应注解，标记分片表，分片字段 
+    * @SharedTable 
+    * @SharedKey 
+* 2、实现接口 ISingleShardingEntity（一维分片），ITwoDimensionsShardingEntity（二维分片），根据字段类型实现接口操作。
 
 #### 四、库内分表
 
-当表属于库内分表时，，需要进行以下处理 1、需要增加相应注解，标记库内分表，库内分表字段 @PartitionTable @PartitionKey 2、实现接口 IPartitionEntity，根据字段类型实现接口操作。
+当表属于库内分表时，需要进行以下处理
+
+* 1、需要增加相应注解，标记库内分表，库内分表字段 
+    * @PartitionTable 
+    * @PartitionKey 
+* 2、实现接口 IPartitionEntity，根据字段类型实现接口操作。
 
