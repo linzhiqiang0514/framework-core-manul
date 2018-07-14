@@ -1,23 +1,50 @@
 # API实现层开发
 
-## Getting Super Powers
-
-Becoming a super hero is a fairly straight forward process:
+## Facade接口实现开发规范
 
 ```
-$ give me super-powers
+/**
+ * .
+ *
+ * @author linzhiqiang
+ * @version Revision 1.0.0
+ * @版权： 版权所有 (c) 2011
+ * @see:
+ * @创建日期： 2018/7/14
+ * @功能说明：
+ */
+public class PrivilegeFacadeImpl implements PrivilegeFacade {
+
+    /**
+     * 注入远程服务调用模板类。
+     */
+    @Autowired
+    @Qualifier("externalRestTemplate")
+    private PaasRestTemplate restTemplate;
+
+    /**
+     * 服务地址
+     */
+    @Value("${xxxxxxx}")
+    String privelegeUrl;
+
+   
+    
+    @Override
+    public List<PrivilegeDTO> queryAllPrivilege() {
+        ResponseEntity<PaasBaseResponse<PrivilegeDTO>> responseDto = restTemplate.exchange(
+                serviceofferUrl + qryServiceOffer,
+                HttpMethod.POST,
+                new HttpEntity<>(new PaasBaseRequest<>()),
+                new ParameterizedTypeReference<PaasBaseResponse<PrivilegeDTO>>() {
+                });
+
+        return responseDto.getBody().getBody();
+    }
+}
 ```
 
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
-
-Once you're strong enough, save the world:
-
-```
-// Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-
-
+* 说明：
+  * 1. 必须实现相应的接口
+  
 
