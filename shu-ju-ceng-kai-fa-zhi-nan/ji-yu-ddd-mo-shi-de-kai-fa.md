@@ -19,8 +19,13 @@
  * @创建日期： 2018/7/14
  * @功能说明：
  */
+//注解@table,分片表等等
 public class OrderItem extends AbstractDomBaseEntityImpl<Long> {
 
+    //属性
+    //表相关注解
+    //方法
+    
     public List<OrderItem> getSubOrderItems() {
         return ((IOrderItemRepository)repository()).querySubOrderItems(this.getId());
     }
