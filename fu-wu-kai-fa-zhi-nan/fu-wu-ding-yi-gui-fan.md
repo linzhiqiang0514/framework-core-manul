@@ -16,11 +16,11 @@
 @Api("xxxx")
 @RefreshableRestController
 @RequestMapping("/xxxCenter/xxx/xxx")
-public class CustControl extends AbstractBaseControl {
+public class CustController extends AbstractBaseController {
 }
 ```
 ### 说明
-+ 1、必须继承AbstractBaseControl
++ 1、必须继承AbstractBaseController
 + 2、必须配置Swagger注解
 
 
