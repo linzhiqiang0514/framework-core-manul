@@ -6,6 +6,7 @@
 
 数据库映射对象（PO），需要对字段、类进行相应的注解标识。 主要是：
 
+* @Sequence
 * @Table 
 * @Id 
 * @Column 
@@ -34,6 +35,7 @@
 @PartitionTable
 @SharedTable
 @Table(name = "PRIVILEGE")
+@Sequence(name = "SEQ_PRIVILEGE_ID")
 public class Privilege extends BaseEntityImpl<Long>
     implements IStatusCdOperator<String>, IPartitionEntity<Date>, ISingleShardingEntity<Long>,
     IVersionEntity<Long> {
