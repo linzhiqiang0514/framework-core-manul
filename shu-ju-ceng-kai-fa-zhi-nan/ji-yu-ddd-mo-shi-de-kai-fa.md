@@ -1,5 +1,11 @@
 # 基于DDD模式的开发
 
+## 引入Jar包
+引入framework-core-ddd下对应的模块。
+如:
+data-service-->framework-core-ddd-data-service
+biz-service-->framework-core-ddd-biz-service
+
 ## 包结构
 
 ![](../.gitbook/assets/ddd-package.png)

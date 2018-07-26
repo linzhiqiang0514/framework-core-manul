@@ -4,6 +4,11 @@
 
 [主数据相关文档.zip](https://github.com/linzhiqiang0514/framework-core-manul/tree/1df45a1bb4a06a60b6ce0d46acfbf60aed11f254/.gitbook/assets/主数据相关文档.zip)
 
+## 引入Jar包
+引入framework-core-meta下对应的模块。
+如:
+data-service-->framework-core-meta-data-service
+biz-service-->framework-core-meta-biz-service
 ## 包结构
 
 与Dao相同
