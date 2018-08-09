@@ -27,4 +27,6 @@
       * framework-core-ddd-pub：主要包含ddd扩展的基础类，如IDomBaseEntity,IDomRepository，主数据相关的获取类。
       * framework-core-ddd-data-service：主要包含基于ddd模式的数据层扩展。
       * framework-core-ddd-biz-service：主要包含基于ddd的业务层扩展。
+    * framework-core-job：定时任务组件
+      * framework-core-job-runner：定时任务执行器开发基类。
 

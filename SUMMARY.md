@@ -18,5 +18,6 @@
   * [服务定义规范](fu-wu-kai-fa-zhi-nan/fu-wu-ding-yi-gui-fan.md)
 * [应用新增Maven模块须知](ying-yong-xin-zeng-maven-mo-kuai-xu-zhi/README.md)
   * [模块新增规范](ying-yong-xin-zeng-maven-mo-kuai-xu-zhi/mo-kuai-xin-zeng-gui-fan.md)
+* [定时任务开发使用规范](ding-shi-ren-wu-kai-fa-shi-yong-gui-fan/README.md)
 
 
