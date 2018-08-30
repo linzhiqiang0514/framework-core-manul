@@ -23,5 +23,22 @@ public class OrderItemBo extends AbstractDomBaseEntityImpl<Long> implements IDom
 }
 ```
 
+```
+/**
+ * .
+ *
+ * @author linzhiqiang
+ * @version Revision 1.0.0
+ * @版权： 版权所有 (c) 2011
+ * @see:
+ * @创建日期： 2018/7/14
+ * @功能说明：
+ */
+public class CustomerBo extends BaseEntityImpl<Long> implements IBaseBoEntity<Long> {
+    //属性
+    //方法
+}
+```
+
 
 
