@@ -6,3 +6,8 @@
 * 修改BaseMapper.queryAttrs方法，入参由Entity改为Map。
 * 增加queryAttr参数转换时的过滤功能。
 
+## 2018-09-10
+* 主数据类中增加对AttrValueId字段的处理。
+* 注意：本次修改会产生应用报错，相关的Attr对象需要实现接口 getSlaAttrValueId
+
+
