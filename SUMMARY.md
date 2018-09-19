@@ -1,5 +1,6 @@
 # Table of contents
 
+* [文档变更历史](doc-change-log.md)
 * [FRAMEWOKR-CORE工程简介](README.md)
 * [API层开发指南](api-ceng-kai-fa-zhi-nan/README.md)
   * [API接口层开发](api-ceng-kai-fa-zhi-nan/api-jie-kou-ceng-kai-fa.md)

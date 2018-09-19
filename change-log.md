@@ -10,4 +10,8 @@
 * 主数据类中增加对AttrValueId字段的处理。
 * 注意：本次修改会产生应用报错，相关的Attr对象需要实现接口 getSlaAttrValueId
 
+## 2018-09-19
+* 在AbstractBaseFacadeImpl增加getRestTemplate的方法，
+* 在AbstractBaseFacadeImpl增加isExternal
+
 
