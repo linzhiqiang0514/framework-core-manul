@@ -75,7 +75,6 @@ public class PrivilegeFacadeImpl implements PrivilegeFacade {
 	 */
 	@Value("${ord.biz.processing.api.isExternal:false}")
 	private boolean isExternal;
-
 	/**
 	 * 重写超类方法
 	 * @return
@@ -83,7 +82,6 @@ public class PrivilegeFacadeImpl implements PrivilegeFacade {
 	protected boolean isExternal(){
 		return isExternal;
 	}
-
 ```
 
 + 完整案例：
@@ -99,19 +97,16 @@ public class PrivilegeFacadeImpl implements PrivilegeFacade {
  */
 @Service("orderProcessingFacade")
 public class OrderProcessingFacadeImpl extends AbstractBaseFacadeImpl implements OrderProcessingFacade {
-
 	/**
 	 * 订单交互服务地址
 	 */
 	@Value("${processingRequestUrl}")
 	private String processingRequestUrl;
-
 	/**
 	 * 是否中心间调用标志，默认为false,若服务需要被跨中心调用，则调用方需配置此参数为true
 	 */
 	@Value("${ord.biz.processing.api.isExternal:false}")
 	private boolean isExternal;
-
 	/**
 	 * 重写超类方法
 	 * @return
@@ -119,7 +114,6 @@ public class OrderProcessingFacadeImpl extends AbstractBaseFacadeImpl implements
 	protected boolean isExternal(){
 		return isExternal;
 	}
-
 	@Override
 	public PubBaseRes<String> createCustOrderNbr(InitCustomerOrderReq req) {
 		ResponseEntity<PubBaseRes<String>> result = getPaasRestTemplate().exchange(
@@ -130,7 +124,6 @@ public class OrderProcessingFacadeImpl extends AbstractBaseFacadeImpl implements
 		return result.getBody();
 	}
 }
-
 ```
 
 
