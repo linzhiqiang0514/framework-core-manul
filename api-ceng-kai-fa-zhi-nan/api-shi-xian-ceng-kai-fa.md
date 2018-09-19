@@ -49,7 +49,7 @@ public class PrivilegeFacadeImpl implements PrivilegeFacade {
   * 1. 必须实现相应的接口
 
 
-## RestTemplate的是用扩展
+## RestTemplate的使用扩展
 ### 背景
 目前的API模块可以供中心间，如业务层调用数据层，或者跨中心，如客户中心调用受理中心。
 在这两种情况下，使用的PaasRestTemplate是不同的bean。
