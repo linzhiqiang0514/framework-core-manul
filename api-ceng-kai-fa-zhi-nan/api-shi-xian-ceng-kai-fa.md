@@ -79,6 +79,7 @@ public class PrivilegeFacadeImpl implements PrivilegeFacade {
 	 * 重写超类方法
 	 * @return
 	 */
+	 @Override
 	protected boolean isExternal(){
 		return isExternal;
 	}
@@ -111,6 +112,7 @@ public class OrderProcessingFacadeImpl extends AbstractBaseFacadeImpl implements
 	 * 重写超类方法
 	 * @return
 	 */
+	 @Override
 	protected boolean isExternal(){
 		return isExternal;
 	}
