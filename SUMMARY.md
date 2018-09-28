@@ -20,5 +20,7 @@
 * [应用新增Maven模块须知](ying-yong-xin-zeng-maven-mo-kuai-xu-zhi/README.md)
   * [模块新增规范](ying-yong-xin-zeng-maven-mo-kuai-xu-zhi/mo-kuai-xin-zeng-gui-fan.md)
 * [定时任务开发使用规范](ding-shi-ren-wu-kai-fa-shi-yong-gui-fan/README.md)
+* [全局索引指南](quan-ju-suo-yin-zhi-nan/README.md)
+  * [操作说明](quan-ju-suo-yin-zhi-nan/cao-zuo-shuo-ming.md)
 * [ChangeLog](change-log.md)
 
