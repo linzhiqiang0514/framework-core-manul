@@ -14,4 +14,7 @@
 * 在AbstractBaseFacadeImpl增加getRestTemplate的方法，
 * 在AbstractBaseFacadeImpl增加isExternal
 
+## 2018-9-29
+* 增加全局索引相关API
+
 
