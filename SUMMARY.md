@@ -26,6 +26,7 @@
   * [模块说明](gui-ze-mai-dian-kai-fa-zhi-nan/mo-kuai-shuo-ming.md)
   * [部署及引用说明](gui-ze-mai-dian-kai-fa-zhi-nan/bu-shu-ji-yin-yong-shuo-ming.md)
   * [开发说明](gui-ze-mai-dian-kai-fa-zhi-nan/kai-fa-shuo-ming.md)
+  * [对象字段说明](gui-ze-mai-dian-kai-fa-zhi-nan/dui-xiang-zi-duan-shuo-ming.md)
   * [问题及约束说明](gui-ze-mai-dian-kai-fa-zhi-nan/wen-ti-ji-yue-shu-shuo-ming.md)
 * [ChangeLog](change-log.md)
 

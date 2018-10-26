@@ -104,3 +104,55 @@ public class TestParallsWarn extends AbstractMultiJavaCodeRuleExecutor {
     ```
 
 
+##三、规则引擎对接
+### 1、添加maven依赖
+在Parent中增加规则引擎的版本
+```
+<dependency>
+    <groupId>com.shtel.paas</groupId>
+    <artifactId>PaasRule-SDK</artifactId>
+    <version>1.3.0</version>
+    <exclusions>
+        <exclusion>
+            <artifactId>maven-aether-provider</artifactId>
+            <groupId>org.apache.maven</groupId>
+        </exclusion>
+    </exclusions>
+</dependency>
+<dependency>
+    <groupId>org.apache.maven</groupId>
+    <artifactId>maven-aether-provider</artifactId>
+    <version>3.2.5</version>
+</dependency>
+```
+特别注意：maven-aether-provider必须正确
+
+在具体的项目中引入，如ord-data-service项目pom中添加模块依赖
+```
+<dependency>
+<groupId>com.shtel.bss.core</groupId>
+<artifactId>framework-core-rule-drools</artifactId>
+<version>${framework-core.version}</version>
+</dependency>
+```
+### 2、添加配置
++ 在启动脚本或配置文件中，增加如下配置
+```
+--M2_HOME=/Users/linzhiqiang/dev/apache-maven-3.5.2-sh
+--M2_REPO=/Users/linzhiqiang/dev/apache-maven-3.5.2-sh/repo
+--paas.rule.kie.type=scanner  （默认配置不变）
+--paas.rule.kieGroupId=com.shtel.paas  （加载规则drl项目的groupid）
+--paas.rule.kieArtifactId=PaasRuleDrl   （加载规则drl项目的artifactId）
+--paas.rule.kieVersion=LATEST  （默认配置不变）
+--paas.rule.pool.coreSize=1000
+--paas.rule.pool.maxSize=1000
+--paas.rule.pool.queueSize=500
+--paas.rule.logUrl=http://localhost:8001/rulesCallLog/add  (根据规则中心提供的地址)
+--paas.rule.centorName=受理中心  （自定义）
+```
+### 3、规则受理返回类型
+ruleType: DRL
+className: sceneCode 场景编码
+methodName: ruleCode 规则编码
+
+
