@@ -136,10 +136,13 @@ public class TestParallsWarn extends AbstractMultiJavaCodeRuleExecutor {
 </dependency>
 ```
 ### 2、添加配置
++ 在系统环境配置中添加：
+```
+M2_HOME=/Users/linzhiqiang/dev/apache-maven-3.5.2-sh
+M2_REPO=/Users/linzhiqiang/dev/apache-maven-3.5.2-sh/repo
+```
 + 在启动脚本或配置文件中，增加如下配置
 ```
---M2_HOME=/Users/linzhiqiang/dev/apache-maven-3.5.2-sh
---M2_REPO=/Users/linzhiqiang/dev/apache-maven-3.5.2-sh/repo
 --paas.rule.kie.type=scanner  （默认配置不变）
 --paas.rule.kieGroupId=com.shtel.paas  （加载规则drl项目的groupid）
 --paas.rule.kieArtifactId=PaasRuleDrl   （加载规则drl项目的artifactId）
