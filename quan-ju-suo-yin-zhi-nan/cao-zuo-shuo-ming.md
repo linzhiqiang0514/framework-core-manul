@@ -53,7 +53,7 @@
 
 ### 2、创建数据库表
 
-#### a.索引配置表：
+#### a.索引配置表（所有字段内容需要大写）：
 
 ```
 drop table if exists index_config;
@@ -64,11 +64,12 @@ CREATE TABLE IF NOT EXISTS ` index_config `(
   		`be_index_col` varchar(100) NOT NULL COMMENT '被索引列',
  		 `pri_key` varchar(100) NOT NULL COMMENT '主键',
  	 	`index_tb` varchar(300) NOT NULL COMMENT '索引表名称',
+ 	 	`index_level` tinyint(4) NOT NULL COMMENT '索引优先级：0为高级：将进行索引操作、 1为低级：将不做索引维护',
  		 PRIMARY KEY (`ID`)
 )
 ```
 
-#### b.索引状态关系表：查询索引开关配置
+#### b.索引状态关系表：查询索引开关配置(字段tb_name内容需要大写)
 ```
 drop table if exists tb_index_relation;
 CREATE TABLE IF NOT EXISTS `tb_index_relation` (
