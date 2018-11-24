@@ -106,6 +106,10 @@ CREATE TABLE IF NOT EXISTS `cust_num_sid` (
 
 ![](../.gitbook/assets/shu-ju-ku1.png)
 
+##### 升级后索引配置表样例：（其中col_group有值时，index_col值不能与原表主键值pri_key相同）
+
+![](../.gitbook/assets/index2.png)
+
 #### 索引关系表样例：
 
 当从索引关系表查询开光配置时，表中若无该表信息，则所以状态以all字段的index_state为准，，若all字段对应的索引状态（index_state）为1，则返回为允许广播，若索引状态为0，则返回不允许广播，所以all字段必须按要求配置。
