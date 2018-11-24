@@ -68,6 +68,13 @@ CREATE TABLE IF NOT EXISTS ` index_config `(
  		 PRIMARY KEY (`ID`)
 )
 ```
+##### a.索引配置表升级语句
+```
+Alter table index_config add unique(index_tb);
+Alter table index_config add col_group varchar(300) COMMENT '组成列名' AFTER index_col;
+Alter table index_config add index_type varchar(100) NOT NULL COMMENT '索引操作类型：ONE-TO-ONE（一对一）、MANY-TO-ONE（多对一）' AFTER index_tb;
+
+```
 
 #### b.索引状态关系表：查询索引开关配置(字段tb_name内容需要大写)
 ```
