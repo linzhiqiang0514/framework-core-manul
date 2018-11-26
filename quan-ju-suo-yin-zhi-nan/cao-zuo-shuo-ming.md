@@ -122,7 +122,7 @@ CREATE TABLE IF NOT EXISTS `cust_num_sid` (
 
 ### 4、索引API说明
 
-#### 索引API工具类：IndexHelp.java
+#### 索引API工具类（一对一）：IndexHelp.java
 
 **包路径：package com.shtel.bss.core.index.index;**
 
@@ -138,11 +138,28 @@ list = IndexHelper.getValues("cUSTOMER", "CUST_NUMBER", "REGION_ID", "350", long
 ```
 其中最后的参数long.class为你需要的返回值类型，传入long.class，则返回long类型数据。
 
-##### isAllowBoardcast(String tbname) 方法（返回的是允许广播，索引配置是否开启）
+#### 索引API工具类（多对一）：IndexHelp.java
+
+##### getValues("表名",索引列名列表（有序list）,"被索引列名",Key值列表（有序 list）,Class);
+
+方法调用：（其中索引列名列表的顺序需要与配置表中的组成列名的顺序一致）
+```
+List values = IndexHelper.getValues("表名",索引列名列表（有序list）,"被索引列名",Key值列表（有序 list）,Class);
+```
+用例：
+```
+list = IndexHelper.getValues("CUSTOMER",indexcolList,"REGION_ID",valueList,Long.class);
+```
+其中最后的参数long.class为你需要的返回值类型，传入long.class，则返回long类型数据。
+
+
+
+
+#### isAllowBoardcast(String tbname) 方法（返回的是允许广播，索引配置是否开启）
 
 根据传入的表名，查询索引关系表，获取索引状态，并返回。若该表名在索引关系表中未查到数据，则会改查询“all”字段的索引状态，并返回。
 
-##### checkIsNull(String tbname, List list) 方法（判断getValue返回值是否为空）
+#### checkIsNull(String tbname, List list) 方法（判断getValue返回值是否为空）
 
 用例：
 ```
