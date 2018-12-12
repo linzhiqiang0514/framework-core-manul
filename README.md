@@ -4,6 +4,7 @@
 
 * framework-core：工程父pom，继承于SHTEL-PAAS-PARENT，用于声明工程范围内的maven定义
   * framework-core-base：主要包含一些基本的工具类，如StringUtils、NumberUtils等。
+  * framework-core-common：主要包含一些pub,pub-api以及以上的层次需要共享的类，如封装的Exception。
   * framework-core-pub：主要包含一些数据层和业务层共享的类，如ApplicationContextUtils，PageInfo，Entity的Base接口等。
     * framework-core-data-common：数据层模块目录
       * framework-core-data-common-service，主要包含数据层操作的基类，接口等，如BaseEntity，BaseService，BaseDao,BaseMapper。
@@ -29,4 +30,9 @@
       * framework-core-ddd-biz-service：主要包含基于ddd的业务层扩展。
     * framework-core-job：定时任务组件
       * framework-core-job-runner：定时任务执行器开发基类。
+
+
+##PPT附件
+![](../.gitbook/assets/开发框架Framework-Core讲解.pptx)
+
 
